@@ -33,14 +33,17 @@ const Sidebar = () => {
               <div className="dashboard-menu">
                 <Link to="/" className="nav-link">
                   <div className="nav-link-icon"><i className="fas fa-chart-bar"></i></div>
-                  Dashboard
+                  <div style={{ marginLeft: "2px" }}>Dashboard</div>
+                  
                 </Link>
               </div>
 
               <div className="client-menu">
                 <a className="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                   <div className="nav-link-icon"><i className="fas fa-users"></i></div>
-                  Clients
+                  <div style={{ marginLeft: "0px" }}>Clients</div>
+                 
+
                   <div className="sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
                 </a>
                 <div className="collapse" id="collapsePages" data-bs-parent="#accordionSidenav">
@@ -53,10 +56,11 @@ const Sidebar = () => {
 
               <div className="loan-management-menu">
                 <a className="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
-                  <div className="nav-link-icon">
-                    <i data-feather="globe" />
-                  </div>
-                  Loans
+                <div className="nav-link-icon">
+                  <i className="fas fa-dollar-sign"></i>
+                </div>
+                <div style={{ marginLeft: "9px" }}>Loans</div>
+                
                   <div className="sidenav-collapse-arrow">
                     <i className="fas fa-angle-down" />
                   </div>
@@ -115,10 +119,11 @@ const Sidebar = () => {
 
               <div className="savings-management-menu">
                 <a className="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseFlows" aria-expanded="false" aria-controls="collapseFlows">
-                  <div className="nav-link-icon">
-                    <i data-feather="repeat" />
-                  </div>
-                  Savings
+                <div className="nav-link-icon">
+                  <i className="fas fa-university"></i>
+                </div>
+                <div style={{ marginLeft: "2px" }}>Savings</div>
+
                   <div className="sidenav-collapse-arrow">
                     <i className="fas fa-angle-down" />
                   </div>

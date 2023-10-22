@@ -1,8 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-// import '../../assets/css/style.css';
-// import '../../assets/js/scripts';
+
 
 const Navbar = () => {
     return (
@@ -46,69 +45,7 @@ const Navbar = () => {
   </form>
   {/* Navbar Items*/}
   <ul className="navbar-nav align-items-center ms-auto">
-    {/* Documentation Dropdown*/}
-    <li className="nav-item dropdown no-caret d-none d-md-block me-3">
-      <a
-        className="nav-link dropdown-toggle"
-        id="navbarDropdownDocs"
-        href="javascript:void(0);"
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <div className="fw-500">Documentation</div>
-        <i className="fas fa-chevron-right dropdown-arrow" />
-      </a>
-      <div
-        className="dropdown-menu dropdown-menu-end py-0 me-sm-n15 me-lg-0 o-hidden animated--fade-in-up"
-        aria-labelledby="navbarDropdownDocs"
-      >
-        <a
-          className="dropdown-item py-3"
-          href="https://docs.startbootstrap.com/sb-admin-pro"
-          target="_blank"
-        >
-          <div className="icon-stack bg-primary-soft text-primary me-4">
-            <i data-feather="book" />
-          </div>
-          <div>
-            <div className="small text-gray-500">Documentation</div>
-            Usage instructions and reference
-          </div>
-        </a>
-        <div className="dropdown-divider m-0" />
-        <a
-          className="dropdown-item py-3"
-          href="https://docs.startbootstrap.com/sb-admin-pro/components"
-          target="_blank"
-        >
-          <div className="icon-stack bg-primary-soft text-primary me-4">
-            <i data-feather="code" />
-          </div>
-          <div>
-            <div className="small text-gray-500">Components</div>
-            Code snippets and reference
-          </div>
-        </a>
-        <div className="dropdown-divider m-0" />
-        <a
-          className="dropdown-item py-3"
-          href="https://docs.startbootstrap.com/sb-admin-pro/changelog"
-          target="_blank"
-        >
-          <div className="icon-stack bg-primary-soft text-primary me-4">
-            <i data-feather="file-text" />
-          </div>
-          <div>
-            <div className="small text-gray-500">Changelog</div>
-            Updates and changes
-          </div>
-        </a>
-      </div>
-    </li>
-    {/* Navbar Search Dropdown*/}
-    {/* * * Note: * * Visible only below the lg breakpoint*/}
+  
     <li className="nav-item dropdown no-caret me-3 d-lg-none">
       <a
         className="btn btn-icon btn-transparent-dark dropdown-toggle"
@@ -153,14 +90,15 @@ const Navbar = () => {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <i data-feather="bell" />
+        <i class="far fa-bell"></i>
       </a>
       <div
         className="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
         aria-labelledby="navbarDropdownAlerts"
       >
         <h6 className="dropdown-header dropdown-notifications-header">
-          <i className="me-2" data-feather="bell" />
+        <i class="fas fa-bell me-2"></i>
+
           Alerts Center
         </h6>
         {/* Example Alert 1*/}
@@ -236,7 +174,8 @@ const Navbar = () => {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <i data-feather="mail" />
+        <i class="far fa-envelope"></i>
+
       </a>
       <div
         className="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
